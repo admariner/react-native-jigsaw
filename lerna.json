@@ -1,0 +1,19 @@
+{
+  "version": "42.0.1",
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "packages": [
+    "packages/*",
+    "example"
+  ],
+  "command": {
+    "publish": {
+      "npmClient": "npm",
+      "ignoreChanges": [
+        "**/example/**",
+        "**/*.md"
+      ],
+      "message:": "chore: publish"
+    }
+  }
+}
